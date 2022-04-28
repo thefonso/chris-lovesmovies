@@ -1,5 +1,5 @@
 const API_BASE_URL =
-  process.env.REACT_APP_API_BASE_URL || "https://chris-welovemovies-backend.herokuapp.com";
+  process.env.REACT_APP_API_BASE_URL || "postgres://egjaxgmo:USYhgXfYz_9ZnAQFLT9OuTVeZ4V4f05F@kashin.db.elephantsql.com/egjaxgmo";
 
 /**
  * Defines the default headers for these functions to work with `json-server`
