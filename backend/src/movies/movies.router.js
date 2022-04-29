@@ -12,11 +12,11 @@ router
   .get(controller.readTheaters)
   .all(methodNotAllowed);
 
-/*router
+router
   .route("/:is_showing=true")
   .get(controller.list)
   .all(methodNotAllowed);
-*/
+
 router
   .route("/:movieId")
   .get(controller.read)
