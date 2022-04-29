@@ -1,8 +1,9 @@
 const router = require("express").Router({ mergeParams: true });
 const controller = require("./movies.controller")
 const methodNotAllowed = require("../errors/methodNotAllowed");
-const reviewRouter = require("../reviews/reviews.router");
-const theatherRouter = require("../theaters/theaters.router");
+const cors = require("cors")
+
+router.use(cors());
 
 router
   .route("/:movieId/reviews")
