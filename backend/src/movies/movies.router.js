@@ -3,8 +3,6 @@ const controller = require("./movies.controller")
 const methodNotAllowed = require("../errors/methodNotAllowed");
 const cors = require("cors")
 
-const corsGet = cors({ methods: "GET" });
-
 router
   .route("/:movieId/reviews")
   .get(controller.listReviews)
@@ -17,8 +15,8 @@ router
 
 router
   .route("/:is_showing=true")
-  .get(corsGet, controller.list)
-  .options(corsGet)
+  .all(cors())
+  .get(controller.list)
   .all(methodNotAllowed);
 
 router
