@@ -12,7 +12,7 @@ const app = express();
 
 app.use(
     cors({
-        origin: "https://chris-welovemovies-client.herokuapp.com"
+        origin: "*"
     })
 );
 app.use(express.json());
