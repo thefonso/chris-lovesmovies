@@ -14,7 +14,6 @@ router
 
 router
   .route("/:is_showing=true")
-  .all(cors())
   .get(controller.list)
   .all(methodNotAllowed);
 
