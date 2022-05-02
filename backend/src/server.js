@@ -1,7 +1,6 @@
 const { PORT = 5000 } = process.env;
 
 const app = require("./app");
-const cors = require("cors")
 const knex = require("./db/connection");
 
 
