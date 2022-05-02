@@ -10,11 +10,13 @@ const errorHandler = require("./errors/errorHandler");
 
 const app = express();
 
-app.use(
-    cors({
-        origin: "*"
-    })
-);
+let corsOptions = {
+    origin: 'http://localhost:8080',
+    optionsSuccessStatus: 200, // For legacy browser support
+    methods: "GET, PUT, DELETE"
+}
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use("/movies", moviesRouter);
