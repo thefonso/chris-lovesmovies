@@ -11,7 +11,7 @@ const errorHandler = require("./errors/errorHandler");
 const app = express();
 
 let corsOptions = {
-    origin: 'http://localhost:8080',
+    origin: 'https://chris-welovemovies-backend.herokuapp.com',
     optionsSuccessStatus: 200, // For legacy browser support
     methods: "GET, PUT, DELETE"
 }
