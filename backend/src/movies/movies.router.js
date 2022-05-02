@@ -13,11 +13,6 @@ router
   .all(methodNotAllowed);
 
 router
-  .route("/:is_showing=true")
-  .get(controller.list)
-  .all(methodNotAllowed);
-
-router
   .route("/:movieId")
   .get(controller.read)
   .all(methodNotAllowed);
