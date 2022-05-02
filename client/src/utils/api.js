@@ -48,6 +48,7 @@ async function fetchJson(url, options, onCancel) {
 function populateReviews(signal) {
   return async (movie) => {
     const url = `${API_BASE_URL}/movies/${movie.movie_id}/reviews`;
+    console.log("populate reviews" + API_BASE_URL)
     movie.reviews = await fetchJson(url, { headers, signal }, []);
     return movie;
   };
@@ -56,6 +57,7 @@ function populateReviews(signal) {
 function populateTheaters(signal) {
   return async (movie) => {
     const url = `${API_BASE_URL}/movies/${movie.movie_id}/theaters`;
+    console.log("populate theaters " + API_BASE_URL)
     movie.theaters = await fetchJson(url, { headers, signal }, []);
     return movie;
   };
@@ -68,6 +70,7 @@ function populateTheaters(signal) {
  */
 export async function listMovies(signal) {
   const url = new URL(`${API_BASE_URL}/movies?is_showing=true`);
+  console.log("List movies " + API_BASE_URL)
   const addReviews = populateReviews(signal);
   return await fetchJson(url, { headers, signal }, []).then((movies) =>
     Promise.all(movies.map(addReviews))
@@ -81,6 +84,7 @@ export async function listMovies(signal) {
  */
 export async function listTheaters(signal) {
   const url = new URL(`${API_BASE_URL}/theaters`);
+  console.log("list theaters " + API_BASE_URL)
   return await fetchJson(url, { headers, signal }, []);
 }
 
@@ -91,6 +95,7 @@ export async function listTheaters(signal) {
  */
 export async function readMovie(movieId, signal) {
   const url = new URL(`${API_BASE_URL}/movies/${movieId}`);
+  console.log("read movie " + API_BASE_URL)
   const addReviews = populateReviews(signal);
   const addTheaters = populateTheaters(signal);
   return await fetchJson(url, { headers, signal }, [])
@@ -100,11 +105,13 @@ export async function readMovie(movieId, signal) {
 
 export async function deleteReview(reviewId) {
   const url = `${API_BASE_URL}/reviews/${reviewId}`;
+  console.log("delete review " + API_BASE_URL)
   return await fetchJson(url, { method: "DELETE", headers }, {});
 }
 
 export async function updateReview(reviewId, data) {
   const url = `${API_BASE_URL}/reviews/${reviewId}`;
+  console.log("update reviews " + API_BASE_URL)
   const options = {
     method: "PUT",
     headers,
