@@ -21,6 +21,7 @@
     "author": "Chris Dowd",
     "license": "UNLICENSED",
     "dependencies": {
-        "cors": "^2.8.5"
+        "cors": "^2.8.5",
+        "knex": "^2.0.0"
     }
 }
