@@ -1,0 +1,20 @@
+Info 0    [18:03:19.894] Starting TS Server
+Info 1    [18:03:19.894] Version: 4.5.5
+Info 2    [18:03:19.894] Arguments: /home/unclefonso/.nvm/versions/node/v16.13.0/bin/node /home/unclefonso/.emacs.d/.local/etc/.cache/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js --logFile /home/unclefonso/thinkful/student_submissions/chris-lovesmovies/.log/tsserver.log --logVerbosity info --cancellationPipeName /tmp/694805c7a5f2954d02c644fbbdf5a4eb/tscancellation*
+Info 3    [18:03:19.894] Platform: linux NodeVersion: 16 CaseSensitive: true
+Info 4    [18:03:19.894] ServerMode: undefined syntaxOnly: false hasUnknownServerMode: undefined
+Info 5    [18:03:19.904] Format host information updated
+Info 6    [18:03:20.170] Search path: /home/unclefonso/thinkful/student_submissions/chris-lovesmovies/backend
+Info 7    [18:03:20.171] For info: /home/unclefonso/thinkful/student_submissions/chris-lovesmovies/backend/knexfile.js :: No config files found.
+Info 8    [18:03:20.174] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 9    [18:03:21.460] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 1286.4037549942732ms
+Info 10   [18:03:21.461] Project '/dev/null/inferredProject1*' (Inferred)
+Info 11   [18:03:21.461] 	Files (162)
+
+Info 12   [18:03:21.461] -----------------------------------------------
+Info 13   [18:03:21.474] Starting updateGraphWorker: Project: /dev/null/autoImportProviderProject1*
+Info 14   [18:03:21.798] Finishing updateGraphWorker: Project: /dev/null/autoImportProviderProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 323.68025098741055ms
+Info 15   [18:03:21.798] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
+Info 16   [18:03:21.798] 	Files (161)
+
+Info 17   [18:03:21.798] -----------------------------------------------
